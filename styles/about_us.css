@@ -1,0 +1,58 @@
+.abot_us {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background-image: url('../assets/images/background_2.png'); /* Фоновое изображение */
+    background-size: cover; /* Растягиваем изображение на весь блок */
+    background-position: center; /* Центрируем изображение */
+    color: white; /* Цвет текста для лучшей читаемости на фоне */
+    position: relative; /* Для наложения текста поверх фона */
+}
+.abot_us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой для улучшения читаемости текста */
+    z-index: 1;
+}
+.text-content, .stats {
+    position: relative; /* Чтобы текст был поверх фона */
+    z-index: 2; /* Текст поверх затемненного слоя */
+}
+.text-content {
+    width: 50%; /* Ширина текстового блока */
+}
+.text-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+.text-content p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.stats {
+    width: 40%; /* Ширина блока статистики */
+    display: flex;
+    flex-direction: column; /* Статистика в столбик */
+    gap: 30px; /* Отступ между элементами */
+}
+.stat {
+    text-align: left; /* Выравнивание текста по левому краю */
+}
+.stat h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.stat h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.stat p {
+    font-size: 1em;
+    line-height: 1.4;
+}

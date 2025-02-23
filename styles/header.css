@@ -1,0 +1,71 @@
+.back_1 img{
+    margin: 0; /* Убираем отступы по умолчанию */
+            height: 776px; /* Занимаем всю высоту экрана */
+          position: relative;
+            width: 1440px;
+            background-position: center; /* Центрируем изображение */
+            background-repeat: no-repeat; /* Запрещаем повторение изображения */
+}
+.back_1.shadow{
+    position: absolute; /* Абсолютное позиционирование */
+            bottom: 0; /* Размещаем внизу */
+            left: 50%; /* Центрируем по горизонтали */
+            transform: translateX(-50%); /* Сдвигаем на половину ширины для точного центрирования */
+            width: 1020px; /* Ширина прямоугольника */
+            height: 104px; /* Высота прямоугольника (можно изменить по вашему усмотрению) */
+            background-color: rgba(0, 0, 0, 0.75); /* Черный цвет с полупрозрачностью (0.5) */
+}
+.overlay{
+    position: absolute;
+    height: 178px;
+    width: 865px;
+    top: 50%;
+    left: 25%;
+   transform: translate(-50%,-50%);
+   color: aliceblue;
+   text-align: center;
+   
+}
+.overlay span{
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.overlay span .spec_yel{
+    color: darkgoldenrod;
+}
+.form-container {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-container input, .form-container button {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: darkgoldenrod;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: goldenrod;
+}
