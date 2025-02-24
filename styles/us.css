@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: white;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 10px;
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.award {
+    background-color: black;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.award-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.award h3 {
+    color: whitesmoke;
+    margin: 10px 0;
+}
+.award p{
+    color: whitesmoke;
+}
+
+.testimonials {
+    margin-top: 40px;
+}
+
+.testimonial {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.client-name {
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.client-profession {
+    color: #777;
+    font-style: italic;
+}
