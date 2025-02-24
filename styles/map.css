@@ -1,0 +1,15 @@
+.map-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.map-container {
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 450px;
+    border: none;
+}
