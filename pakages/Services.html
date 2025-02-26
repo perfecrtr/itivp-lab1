@@ -15,9 +15,9 @@
                 <img src="../assets/images/logo.png" alt="Логотип"> 
             </div>
         
-            
+            <img alt="burger-menu" class="navigation_list__menu" src="../assets/images/server-img/menu.svg">
             <ul class="navigation_list">
-                <img alt="burger-menu" class="navigation_list__menu" src="../assets/images/server-img/menu.svg">
+                
                 <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Home</button></li>
                 <li class="navigation_item">
                     <button class="navigation_button" onclick='window.location.href="card.html"'>Objects</button>
@@ -91,7 +91,7 @@
 
     <script>
         // Инициализация Stripe
-        const stripe = Stripe('your-publishable-key-here'); // Замените на ваш публичный ключ Stripe
+        const stripe = Stripe('pk_test_51Qwh0KAOyWetaPXV7BMZImAuGnHTvCVeRd3DFx1Uc1uSlcFdwmqQsFZ3rdwAqh2y3NCmI8VHAb464hiBasvtakYn00JpsejMaT'); // Замените на ваш публичный ключ Stripe
 
         const elements = stripe.elements();
         const cardElement = elements.create('card');

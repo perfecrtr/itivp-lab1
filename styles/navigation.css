@@ -28,7 +28,7 @@
 
 @media (max-width: 850px) {
     .navigation_list {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -43,7 +43,7 @@
         margin: 10px 0;
     }
 
-   img .navigation_list__menu {
+    .navigation_list__menu {
         display: block;
     }
 }
