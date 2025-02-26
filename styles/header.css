@@ -1,19 +1,19 @@
 .back_1 img{
-    margin: 0; /* Убираем отступы по умолчанию */
-            height: 776px; /* Занимаем всю высоту экрана */
+    margin: 0; 
+            height: 776px; 
           position: relative;
             width: 1440px;
-            background-position: center; /* Центрируем изображение */
-            background-repeat: no-repeat; /* Запрещаем повторение изображения */
+            background-position: center; 
+            background-repeat: no-repeat; 
 }
 .back_1.shadow{
-    position: absolute; /* Абсолютное позиционирование */
-            bottom: 0; /* Размещаем внизу */
-            left: 50%; /* Центрируем по горизонтали */
-            transform: translateX(-50%); /* Сдвигаем на половину ширины для точного центрирования */
-            width: 1020px; /* Ширина прямоугольника */
-            height: 104px; /* Высота прямоугольника (можно изменить по вашему усмотрению) */
-            background-color: rgba(0, 0, 0, 0.75); /* Черный цвет с полупрозрачностью (0.5) */
+    position: absolute; 
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            width: 1020px; 
+            height: 104px; 
+            background-color: rgba(0, 0, 0, 0.75); 
 }
 .overlay{
     position: absolute;
@@ -30,7 +30,17 @@
     font-size: 64px;
     font-weight: bold;
 }
-
+@media (max-width: 850px){
+    .overlay{
+        margin-left: 20%;
+    }
+    .overlay span{
+       font-size: 36px; 
+    }
+    .form-container{
+        display: none;
+    }
+}
 .overlay span .spec_yel{
     color: darkgoldenrod;
 }

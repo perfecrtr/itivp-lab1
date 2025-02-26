@@ -1,53 +1,72 @@
-
 .navigation {
-    position: relative; 
-    top: 0; 
-    left: 0; 
-    width: 98%; 
-    background-color: black; 
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 98%;
+    background-color: black;
     opacity: 75%;
-    z-index: 1000; 
+    z-index: 100; 
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 10px 20px; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
-
 
 .navigation_list {
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-    display: flex; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 101; 
 }
 
+.navigation_list__menu {
+    display: none;
+    cursor: pointer;
+    z-index: 100200; /* z-index для кнопки бургера (выше, чем у списка) */
+}
+
+@media (max-width: 850px) {
+    .navigation_list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        opacity: 75%;
+    }
+
+    .navigation_item {
+        display: none;
+        margin: 10px 0;
+    }
+
+   img .navigation_list__menu {
+        display: block;
+    }
+}
 
 .navigation_item {
-    margin-left: 15px; 
+    margin-left: 15px;
 }
 
-
 .navigation_button {
-    padding: 10px 15px; 
-    background-color: transparent; 
-    border: none; 
-    cursor: pointer; 
-    font-size: 16px; 
-    color:aliceblue;
+    padding: 10px 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: aliceblue;
 }
 
 .navigation_button_active {
-    font-weight: bold; 
-    color: darkgoldenrod; 
-     
+    font-weight: bold;
+    color: darkgoldenrod;
 }
 
-
-.logo {
-    width: 50px; 
-    height: auto; 
-}
-.logo img{
+.logo img {
     width: 270px;
     height: 50px;
 }
