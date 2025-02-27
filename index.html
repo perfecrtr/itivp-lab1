@@ -3,70 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TotalEnvironment</title>
+    <title>Environment</title>
     <link rel="stylesheet" href="styles/index.css">
 </head>
 <body class="bod">
     <header class="header">
-        <div class="back_1">
-          <img src="assets/images/background_1.png" alt="background" class="background-image">
-          <nav class="navigation">
+    
+        <nav class="navigation">
+          
             <div class="logo">
-              <img src="assets/images/logo.png" alt="Логотип">
+                <img src="assets/images/logo.png" alt="Логотип"> 
             </div>
-            <img alt="burger-menu" class="navigation_list__menu" src="./assets/images/server-img/menu.svg">
+        
+            <img alt="burger-menu" class="navigation_list__menu" src="./assets/images/server-img/menu.svg">    
             <ul class="navigation_list">
-              <li class="navigation_item">
-                <button class="navigation_button navigation_button_active">Home</button>
-              </li>
-              <li class="navigation_item">
-                <button class="navigation_button" onclick='window.location.href="pakages/card.html"'>Objects</button>
-              </li>
-              <li class="navigation_item">
-                <button class="navigation_button" onclick='window.location.href="pakages/us.html"'>About us</button>
-              </li>
-              <li class="navigation_item">
-                <button class="navigation_button" onclick='window.location.href="pakages/Services.html"'>Services</button>
-              </li>
-              <li class="navigation_item">
-                <button class="navigation_button" onclick='window.location.href="pakages/Contacts.html"'>Contacts</button>
-              </li>
+               
+                <li class="navigation_item">
+                    <button class="navigation_button navigation_button_active">Home</button>
+                </li>
+                <li class="navigation_item">
+                    <button class="navigation_button" onclick='window.location.href="pakages/card.html"'>Objects</button>
+                </li>
+                <li class="navigation_item">
+                    <button class="navigation_button" onclick='window.location.href="pakages/us.html"'>About us</button>
+                </li>
+                <li class="navigation_item">
+                    <button class="navigation_button" onclick='window.location.href="pakages/Services.html"'>Services</button>
+                </li>
+                <li class="navigation_item">
+                    <button class="navigation_button" onclick='window.location.href="pakages/Contacts.html"'>Contacts</button>
+                </li>
             </ul>
-          </nav>
-          <div class="center-content">
+        </nav>
+        <div class="back_1">
+            <img src="assets/images/background_1.png" alt="background">
             <div class="overlay">
-                Find Your <span class="spec_yel">Dream Home</span> with us
+                <span >
+                    Find Your <div class="spec_yel">Dream Home</div>   with us 
+                </span>
             </div>
-            <div>
-                <div class="form-text-up">Get In <span class="spec_yel">Touch</span></div>
-                <div class="form-container">
-                    <form class="contact-form">
-                      <div class="toggle-buttons">
-                        <button type="button" class="toggle-button active" data-value="sale">For Sale</button>
-                        <button type="button" class="toggle-button" data-value="rent">For Rent</button>
-                      </div>
-                  
-                      <!-- Поля для ввода -->
-                      <div class="form-group">
-                        <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
-                      </div>
-                      <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                      </div>
-                  
-                      <!-- Кнопка отправки -->
-                      <button type="submit" class="submit-button">Submit</button>
-                    </form>
-                  </div>
-            </div>
-          </div>
-          <div class="shadow"></div>
+            <div class="shadow"></div>
         </div>
-      </header>
-      <main>
+        <div class="form-container">
+            <h2>Get In Touch</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Phone number">
+            <input type="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </div>
+    </header>
+    <main>
         <div class="abot_us">
             <div class="text-content">
                 <h1>Why Choose Us</h1>
@@ -92,33 +78,14 @@
         </div>
     </main>
     <footer>
-        <div>
-            <div class="top_footer">
-                <div class="logo_text">
-                    <div class="logo_bot">
-                        <img src="assets/images/logo.png" alt="Логотип">
-                    </div>
-                    <div class="footer-text">
-                        Total Environment has delivered more than 4.5 million square feet to over 1,200 customers across many projects in Bangalore, Hyderabad, and Pune.
-                    </div>
-                </div>
-                <div class="contacts">
-                    <div class="tx">Contact Us</div>
-                    <hr class="custom-hr">
-                    <div class="adress">
-                        <h3>Total Environment</h3>
-                        <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Zone, <br>Whitefield, Bangalore, 560066, India</p>
-                    </div>
-                    <div class="numbers">
-                        <h3>Sales:</h3>
-                        <p>Mobile: +91 99000 78000</p>
-                        <p>Email: discover@total-environment.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">© 2022 TotalEnvironment | All Rights Reserved</div>
-        </div>
+        <p>Total Environment</p>
+        <p>IMADINE, No. 78, ITPL Main Road, EPIP Zone, Whitefield, Bangalore, 560066, India</p>
+        <p>Sales: Mobile: +91 99000 78000 | Email: discover@total-environment.com</p>
+        <p>© 2022 TotalEnvironment | All Rights Reserved</p>
     </footer> 
+
     <script src="./scripts/script.js"></script>
 </body>
 </html>
+
+

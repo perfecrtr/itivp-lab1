@@ -2,48 +2,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #1B1B1B;
+    background-color: black;
 }
-
-.button-section {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center; 
-    gap: 20px;
-    padding: 20px;
-    background-color: #1B1B1B;
- }
-  
- .more-section {
-    margin-top: 25px;
-    display: flex;
-    flex-direction: column; /* Элементы друг под другом */
-    align-items: center; /* Выравниваем по центру горизонтально */
-    gap: 10px; /* Расстояние между кнопкой и текстом */
-  }
-
-  .view-text{
-    font-size: 14px;
-    color: #FFFBFB;
-    margin-bottom: 30px;
-  }
-
-  .filter-button {
-    padding: 10px 20px; 
-    font-size: 16px;
-    color: #FFFBFB;
-    background-color: #1B1B1B;; 
-    border: 1px solid #ccc; 
-    border-radius: 10px; 
-    cursor: pointer; 
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
-  }
-  
-  .filter-button.active {
-    color: #FF9505; 
-    border-color: #FF9505; 
-  }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -57,31 +17,15 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: calc(50% - 40px);
-    max-width: 577px;
-    height: 582px;
+    max-width: 300px;
     transition: transform 0.3s ease;
-    background-color: #2C2B2B;
-    
 }
-
-.icon-text {
-    display: flex;
-}
-
-
-.icon-text-text{
-    font-size: 16px;
-    color: #FFFBFB;
-    opacity: 70%;
-    padding-top: 8px;
-}
-
 .card:hover {
     transform: translateY(-10px);
 }
-.card-img {
-    width: 577px;
-    height: 450px;
+.card img {
+    width: 100%;
+    height: 200px;
     object-fit: cover;
 }
 .card-content {
@@ -97,76 +41,14 @@ body {
     color:white ;
 }
 .card-content .details {
-    width: 535px;
-    height: 42px;
-    border: 2px solid #9e9e9e;
     display: flex;
-    border-radius: 10px;
     justify-content: space-between;
+    margin-top: 10px;
 }
-
-.details{
-    margin-top: 15px;
-}
-
-.bedrooms,
-.bath,
-.text-ic {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  padding: 0 5px; 
-}
-
-.bedrooms{
-    width: 33%;
-    display: flex;
-    border-right: 2px solid #9e9e9e;
-    white-space: nowrap;
-    align-items: center;
-    gap: 17px;
-}
-
-.bath{
-    width: 33%;
-    display: flex;
-    border-right: 2px solid #9e9e9e;
-    align-items: center;
-    text-align: center;
-}
-
-.icon_b{
-    width: 16px;
-    height: 16px;
-}
-
-.text-ic{
-    width: 33%;
-    color: #FFFBFB;
-    opacity: 65%;
-    align-items: center;
-}
-
 .card-content .details span {
     font-size: 0.9em;
     color: #777;
 }
-
-.more-button{
-    background: transparent; 
-    border: none;
-    padding: 0;
-    cursor: pointer; 
-}
-
-.more-button:hover img {
-    opacity: 0.8; 
-  }
-
-  .more-button:active img {
-    opacity: 0.6; 
-  }
-
 @media (max-width: 768px) {
     .card {
         width: calc(50% - 40px);
