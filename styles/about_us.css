@@ -1,13 +1,14 @@
 .abot_us {
     display: flex;
     justify-content: space-between;
+    gap:400px;
     align-items: flex-start;
     padding: 50px;
-    background-image: url('../assets/images/background_2.png'); /* Фоновое изображение */
-    background-size: cover; /* Растягиваем изображение на весь блок */
-    background-position: center; /* Центрируем изображение */
-    color: white; /* Цвет текста для лучшей читаемости на фоне */
-    position: relative; /* Для наложения текста поверх фона */
+    background-image: url('../assets/images/background_2.png'); 
+    background-size: cover; 
+    background-position: center; 
+    color: white; 
+    position: relative; 
 }
 .abot_us::before {
     content: '';
@@ -19,40 +20,89 @@
     background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный слой для улучшения читаемости текста */
     z-index: 1;
 }
+
 .text-content, .stats {
-    position: relative; /* Чтобы текст был поверх фона */
-    z-index: 2; /* Текст поверх затемненного слоя */
+    position: relative; 
+    z-index: 2; 
 }
 .text-content {
-    width: 50%; /* Ширина текстового блока */
+    margin-left: 130px;
+    margin-top:180px;
+    width: 45%; /* Ширина текстового блока */
 }
 .text-content h1 {
-    font-size: 2.5em;
+    font-size: 2.4em;
     margin-bottom: 20px;
+    color: #FF9505;
 }
 .text-content p {
     font-size: 1.2em;
     line-height: 1.6;
     margin-bottom: 20px;
+    color: #FFFBFB;
 }
 .stats {
     width: 40%; /* Ширина блока статистики */
     display: flex;
     flex-direction: column; /* Статистика в столбик */
-    gap: 30px; /* Отступ между элементами */
+    gap: 10px; /* Отступ между элементами */
 }
 .stat {
-    text-align: left; /* Выравнивание текста по левому краю */
+    text-align: center; /* Выравнивание текста по левому краю */
+    width: 270px;
 }
 .stat h2 {
+    color: #FF9505;
     font-size: 2em;
-    margin-bottom: 10px;
+    opacity: 80%;
 }
 .stat h3 {
+    color: #FFFBFB;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    opacity: 75%;
 }
 .stat p {
+    color: #FFFBFB;
     font-size: 1em;
     line-height: 1.4;
+    opacity:60%;
 }
+
+
+@media (max-width: 768px) {
+    .abot_us {
+      flex-direction: column; 
+      gap: 70px; 
+    }
+    .text-content {
+        width: 100%; 
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    .text-content p{
+        font-size: 0.9em;
+        white-space: pre-wrap;
+        text-align: center;
+    }
+    .text-content h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .stats {
+        width: 100%;
+    }
+    .stat {
+        text-align: center; 
+        width: 100%;
+    }
+    .stat h2 {
+        font-size: 2em;
+    }
+    .stat h3 {
+        font-size: 1.5em;
+    }
+    .stat p {
+        font-size: 1em;
+        line-height: 1.4;
+    }
+  }
