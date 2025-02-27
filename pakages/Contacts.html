@@ -8,52 +8,68 @@
 </head>
 <body class="bod">
     <header class="header">
-    
-        <nav class="navigation">
-          
+        <div class="back_1">
+            <img src="../assets/images/background_1.png" alt="background">
+          <nav class="navigation">
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="Логотип"> 
+                <img src="../assets/images/logo.png" alt="Логотип"> <!-- Замените logo.png на путь к вашему логотипу -->
             </div>
-        
             <img alt="burger-menu" class="navigation_list__menu" src="../assets/images/server-img/menu.svg">
             <ul class="navigation_list">
-               
                 <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Home</button></li>
                 <li class="navigation_item">
                     <button class="navigation_button" onclick='window.location.href="card.html"'>Objects</button>
                 </li>
                 <li class="navigation_item">
-                    <button class="navigation_button " onclick='window.location.href="us.html"'>About us</button>
+                    <button class="navigation_button" onclick='window.location.href="us.html"'>About us</button>
                 </li>
                 <li class="navigation_item">
-                    <button class="navigation_button  " onclick='window.location.href="Services.html"'>Services</button>
+                    <button class="navigation_button" onclick='window.location.href="Services.html"'>Services</button>
                 </li>
                 <li class="navigation_item">
-                    <button class="navigation_button  navigation_button_active" onclick='window.location.href="Contacts.html"'>Contacts</button>
+                    <button class="navigation_button navigation_button_active" onclick='window.location.href="Contacts.html"'>Contacts</button>
                 </li>
             </ul>
         </nav>
-        <div class="back_1">
-            <img src="../assets/images/background_1.png" alt="background">
+          <div class="center-content">
             <div class="overlay">
-                <span >
-                    Find Your <div class="spec_yel">Dream Home</div>   with us 
-                </span>
+                Find Your <span class="spec_yel">Dream Home</span> with us
             </div>
-            <div class="shadow"></div>
+          </div>
+          <div class="shadow"></div>
         </div>
-      
     </header>
     <main>
-
+        <section class="backcontacts">
+        </section>
     </main>
     <footer>
-       
-            <p>Total Environment</p>
-            <p>IMADINE, No. 78, ITPL Main Road, EPIP Zone, Whitefield, Bangalore, 560066, India</p>
-            <p>Sales: Mobile: +91 99000 78000 | Email: discover@total-environment.com</p>
-            <p>© 2022 TotalEnvironment | All Rights Reserved</p>
-        
-    </footer>
+        <div>
+            <div class="top_footer">
+                <div class="logo_text">
+                    <div class="logo_bot">
+                        <img src="../assets/images/logo.png" alt="Логотип">
+                    </div>
+                    <div class="footer-text">
+                        Total Environment has delivered more than 4.5 million square feet to over 1,200 customers across many projects in Bangalore, Hyderabad, and Pune.
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="tx">Contact Us</div>
+                    <hr class="custom-hr">
+                    <div class="adress">
+                        <h3>Total Environment</h3>
+                        <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Zone, <br>Whitefield, Bangalore, 560066, India</p>
+                    </div>
+                    <div class="numbers">
+                        <h3>Sales:</h3>
+                        <p>Mobile: +91 99000 78000</p>
+                        <p>Email: discover@total-environment.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">© 2022 TotalEnvironment | All Rights Reserved</div>
+        </div>
+    </footer> 
     <script src="../scripts/script.js"></script>
 </body>
