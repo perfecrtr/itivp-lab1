@@ -1,7 +1,7 @@
 .abot_us {
     display: flex;
     justify-content: space-between;
-    gap:400px;
+    gap:300px;
     align-items: flex-start;
     padding: 50px;
     background-image: url('../assets/images/background_2.png'); 
@@ -28,7 +28,7 @@
 .text-content {
     margin-left: 130px;
     margin-top:180px;
-    width: 45%; /* Ширина текстового блока */
+    width: 55%; /* Ширина текстового блока */
 }
 .text-content h1 {
     font-size: 2.4em;
