@@ -1,5 +1,20 @@
-document.addEventListener('DOMContentLoaded', function () {
+  document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('.toggle-button');
+  
+    buttons.forEach(button => {
+      button.addEventListener('click', function () {
+        // Убираем активный класс у всех кнопок
+        buttons.forEach(btn => btn.classList.remove('active'));
+        // Добавляем активный класс к текущей кнопке
+        this.classList.add('active');
+        // Можно добавить логику для обработки выбора
+        console.log('Selected:', this.getAttribute('data-value'));
+      });
+    });
+  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const buttons = document.querySelectorAll('.toggle-button-back');
   
     buttons.forEach(button => {
       button.addEventListener('click', function () {

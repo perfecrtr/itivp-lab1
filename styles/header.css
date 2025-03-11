@@ -86,7 +86,7 @@
     font-size: 60px;
     width: 100%; 
     text-align: left; 
-    max-width: 800px; 
+    max-width: 780px; 
     font-weight: bold;
   }
   
@@ -123,10 +123,6 @@
     justify-content: center;
     gap: 70px; 
   }
-
-.contact-form {
-  height: 1000px
-}
   
   .toggle-button {
     padding: 10px 20px;
@@ -221,15 +217,14 @@
       left: 0;
       width: 100%;
       background-color: #1B1B1B;
-      padding-top: 0px;
-      padding-right: 0px;
+      padding: 0px;
     }
 
     .navigation_item {
     
     text-align: center;
     display: none;
-    margin: 10px 60px 0px 0px;
+    margin: 10px 0px 0px 0px;
     padding-bottom: 20px;
   }
   
