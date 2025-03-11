@@ -206,7 +206,7 @@
   }
   
   /* Адаптивность */
-  @media (max-width: 768px) {
+  @media (max-width: 840px) {
     .navigation_list {
       position: relative;
       display: flex;

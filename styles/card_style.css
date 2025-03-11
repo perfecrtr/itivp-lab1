@@ -57,8 +57,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: calc(50% - 40px);
-    max-width: 577px;
+    width: 565px;
     height: 582px;
     transition: transform 0.3s ease;
     background-color: #2C2B2B;
@@ -168,13 +167,3 @@ body {
     opacity: 0.6; 
   }
 
-@media (max-width: 768px) {
-    .card {
-        width: calc(50% - 40px);
-    }
-}
-@media (max-width: 480px) {
-    .card {
-        width: 100%;
-    }
-}
