@@ -57,7 +57,8 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    width: 565px;
+    max-width: 565px;
+    width: 100%;
     height: 582px;
     transition: transform 0.3s ease;
     background-color: #2C2B2B;
@@ -80,7 +81,7 @@ body {
     transform: translateY(-10px);
 }
 .card-img {
-    width: 577px;
+    width: 100%;
     height: 450px;
     object-fit: cover;
 }
@@ -96,8 +97,11 @@ body {
     font-size: 1em;
     color:white ;
 }
-.card-content .details {
-    width: 535px;
+
+.details{
+    margin-top: 15px;
+    max-width: 535px;
+    width: 100%;
     height: 42px;
     border: 2px solid #9e9e9e;
     display: flex;
@@ -105,26 +109,14 @@ body {
     justify-content: space-between;
 }
 
-.details{
-    margin-top: 15px;
-}
-
-.bedrooms,
-.bath,
-.text-ic {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  padding: 0 5px; 
-}
-
 .bedrooms{
     width: 33%;
     display: flex;
     border-right: 2px solid #9e9e9e;
-    white-space: nowrap;
     align-items: center;
-    gap: 17px;
+    text-align: center;
+    justify-content: center;
+    gap: 2px;
 }
 
 .bath{
@@ -133,6 +125,16 @@ body {
     border-right: 2px solid #9e9e9e;
     align-items: center;
     text-align: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.square{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .icon_b{
@@ -141,10 +143,11 @@ body {
 }
 
 .text-ic{
-    width: 33%;
+    width: auto;
     color: #FFFBFB;
     opacity: 65%;
     align-items: center;
+    text-wrap: nowrap;
 }
 
 .card-content .details span {

@@ -123,6 +123,10 @@
     justify-content: center;
     gap: 70px; 
   }
+
+.contact-form {
+  height: 1000px
+}
   
   .toggle-button {
     padding: 10px 20px;

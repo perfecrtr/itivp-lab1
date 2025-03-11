@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../styles/card_style.css">
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/footer.css">
-
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <header class="header">
@@ -39,7 +39,7 @@
                     Найдите Ваш <span class="spec_yel">Дом Мечты</span> с нами
                 </div>
                 <div>
-                    <div class="form-text-up">Get In <span class="spec_yel">Touch</span></div>
+                    <div class="form-text-up"><span class="spec_yel">Свяжитесь</span> с нами</div>
                     <div class="form-container">
                         <form class="contact-form">
                           <div class="toggle-buttons">
@@ -47,7 +47,6 @@
                             <button type="button" class="toggle-button" data-value="rent">Аренда</button>
                           </div>
                       
-                          <!-- Поля для ввода -->
                           <div class="form-group">
                             <input type="text" id="full-name" name="full-name" placeholder="ФИО" required>
                           </div>
@@ -58,7 +57,6 @@
                             <input type="email" id="email" name="email" placeholder="Электронная почта" required>
                           </div>
                       
-                          <!-- Кнопка отправки -->
                           <button type="submit" class="submit-button">Отправить</button>
                         </form>
                       </div>
@@ -69,30 +67,32 @@
     </header>
   
     <div class="main">
-        <section class="button-section">
+        <div class="button-section">
                 <button class="filter-button active">Все</button>
                 <button class="filter-button">Студии</button>
                 <button class="filter-button">1 Спальня</button>
                 <button class="filter-button">2 Спальни</button>
-        </section>
-        <section class="container">
+        </div>
+        <div class="container">
             <div class="card">
                 <img src="../assets/images/card_1.png" alt="Property 1" class="card-img">
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Kanakapura Rd, Bangalore.</div>
+                        <div class="icon-text-text">Зелёный Луг, Минск.</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bedrooms</div>
+                            <div class="text-ic">1 Спальня</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bath</div>
+                            <div class="text-ic">1 Ванна</div>
                         </div>
-                        <div class="text-ic">535 sq ft</div>
+                        <div class="square">
+                            <div class="text-ic">535 кв. м.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -101,18 +101,20 @@
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Off Hennur Road, Bangalore.</div>
+                        <div class="icon-text-text">Домбровка, Минск.</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">2 Bedrooms</div>
+                            <div class="text-ic">2 Спальни</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">3 Bath</div>
+                            <div class="text-ic">3 Ванны</div>
                         </div>
-                        <div class="text-ic">1000 sq ft</div>
+                        <div class="square">
+                            <div class="text-ic">535 кв. м.</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -121,19 +123,21 @@
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Doddaballapur Road, Bangalore</div>
+                        <div class="icon-text-text">Лебяжий, Минск</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bedrooms</div>
+                            <div class="text-ic">1 Спальня</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bath</div>
-                        </div class="square">
-                            <div class="text-ic">535 sq ft</div>
+                            <div class="text-ic">1 Ванна</div>
                         </div>
+                        <div class="square">
+                            <div class="text-ic">535 кв. м.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card">
@@ -141,71 +145,74 @@
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Whitefield, Bangalore.</div>
+                        <div class="icon-text-text">Уручье, Минск.</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bedrooms</div>
+                            <div class="text-ic">1 Спальня</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bath</div>
+                            <div class="text-ic">1 Ванна</div>
                         </div>
-                        </div class="square">
-                            <div class="text-ic">535 sq ft</div>
+                        <div class="square">
+                            <div class="text-ic">535 кв. м.</div>
                         </div>
                     </div>
+                </div>
             </div>
             <div class="card">
                 <img src="../assets/images/card_5.png" alt="Property 1" class="card-img">
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Yelahanka, Bangalore.</div>
+                        <div class="icon-text-text">Малиновка, Минск.</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bedrooms</div>
+                            <div class="text-ic">1 Спальня</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bath</div>
+                            <div class="text-ic">1 Ванна</div>
                         </div>
-                        </div class="square">
-                            <div class="text-ic">535 sq ft</div>
+                        <div class="square">
+                            <div class="text-ic">535 кв. м.</div>
                         </div>
                     </div>
+                </div>
             </div>
             <div class="card">
                 <img src="../assets/images/card_6.png" alt="Property 1" class="card-img">
                 <div class="card-content">
                     <div class="icon-text">
                         <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                        <div class="icon-text-text">Uday Baug, Pune.</div>
+                        <div class="icon-text-text">Ольшанка, Гродно.</div>
                     </div>
                     <div class="details">
                         <div class="bedrooms">
                             <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bedrooms</div>
+                            <div class="text-ic">1 Спальня</div>
                         </div>
                         <div class="bath">
                             <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                            <div class="text-ic">1 Bath</div>
+                            <div class="text-ic">1 Ванна</div>
                         </div>
-                        </div class="square">
-                            <div class="text-ic">535 sq ft</div>
-                        </div>
+                        <div class="square">
+                                <div class="text-ic">535 кв. м.</div>
                     </div>
+                </div>
             </div>
-        </section>
-        <section class="more-section">
+        </div>
+        </div>
+        <div class="more-section">
             <button class="more-button">
                 <img src="../assets/images/Vector.png" alt="Иконка" class="vector-img">
             </button>
             <div class="view-text">Больше</div>
-        </section>
+        </div>
     </div>
     <footer>
         <div>
@@ -215,19 +222,19 @@
                         <img src="../assets/images/logo.png" alt="Логотип">
                     </div>
                     <div class="footer-text">
-                        Total Environment has delivered more than 4.5 million square feet to over 1,200 customers across many projects in Bangalore, Hyderabad, and Pune.
+                        Total Environment реализовала проекты общей площадью более 4,5 миллиона квадратных футов для более чем 1 200 клиентов в различных регионах Беларуси, включая Минск, Гродно и Брест.
                     </div>
                 </div>
                 <div class="contacts">
-                    <div class="tx">Свяжитесь с Нами</div>
+                    <div class="tx">Свяжитесь с нами</div>
                     <hr class="custom-hr">
                     <div class="adress">
                         <h3>Total Environment</h3>
-                        <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Zone, <br>Whitefield, Bangalore, 560066, India</p>
+                        <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Зона, <br>Карданово, Речица, 560066, Беларусь</p>
                     </div>
                     <div class="numbers">
                         <h3>Продажи:</h3>
-                        <p>Телефон: +375 29 555 55 55</p>
+                        <p>Телефон: +91 99000 78000</p>
                         <p>Электронная почта: discover@total-environment.com</p>
                     </div>
                 </div>
