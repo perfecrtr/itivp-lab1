@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objects</title>
+    <title>Property Listings</title>
     <link rel="stylesheet" href="../styles/card_style.css">
     <link rel="stylesheet" href="../styles/index.css">
 
+       
 </head>
 <body>
+   
         <header class="header">
-            <div class="back_1">
-                <img src="../assets/images/background_1.png" alt="background">
-              <nav class="navigation">
+    
+            <nav class="navigation">
+              
                 <div class="logo">
                     <img src="../assets/images/logo.png" alt="Логотип"> <!-- Замените logo.png на путь к вашему логотипу -->
                 </div>
+            
                 <img alt="burger-menu" class="navigation_list__menu" src="../assets/images/server-img/menu.svg">
                 <ul class="navigation_list">
-                    <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Главная</button></li>
+
+                   
+                    <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Home</button></li>
+
                     <li class="navigation_item">
                         <button class="navigation_button  navigation_button_active" onclick='window.location.href="card.html"'>Объекты</button>
                     </li>
@@ -33,203 +39,119 @@
                     </li>
                 </ul>
             </nav>
-              <div class="center-content">
+            <div class="back_1">
+                <img src="../assets/images/background_1.png" alt="background">
                 <div class="overlay">
-                    Найди свою<span class="spec_yel">Тихую Гавань</span> с нами
+
+                    <span >
+                        Find Your <div class="spec_yel">Dream Home</div>   with us 
+                    </span>
+
                 </div>
-                <div>
-                    <div class="form-text-up">Будь <span class="spec_yel">Досягаем</span></div>
-                    <div class="form-container">
-                        <form class="contact-form">
-                          <div class="toggle-buttons">
-                            <button type="button" class="toggle-button active" data-value="sale">На продажк</button>
-                            <button type="button" class="toggle-button" data-value="rent">В аренду</button>
-                          </div>
-                      
-                          <!-- Поля для ввода -->
-                          <div class="form-group">
-                            <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
-                          </div>
-                          <div class="form-group">
-                            <input type="tel" id="phone-number" name="phone-number" placeholder="Phone Number" required>
-                          </div>
-                          <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
-                          </div>
-                      
-                          <!-- Кнопка отправки -->
-                          <button type="submit" class="submit-button">Принять</button>
-                        </form>
-                      </div>
-                </div>
-              </div>
-              <div class="shadow"></div>
+                <div class="shadow"></div>
             </div>
-          </header>
+            <div class="form-container">
+                <h2>Get In Touch</h2>
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Phone number">
+                <input type="email" placeholder="Email">
+                <button type="submit">Submit</button>
+            </div>
+        </header>
   
     <div class="main">
-    <section class="button-section">
-            <button class="filter-button active">Всего</button>
-            <button class="filter-button">Студия</button>
-            <button class="filter-button">1 спальня</button>
-            <button class="filter-button">2 Спальни</button>
-    </section>
+
+
     <div class="container">
         <div class="card">
-            <img src="../assets/images/card_1.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_1.png" alt="Property 1">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Перепельск, ул.Казановы 27</div>
-                </div>
+
+                <h3>Randkapura Rd, Bangalore</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 спальня</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 ванная</div>
-                    </div>
-                    <div class="text-ic">535 кв м</div>
+                    <span>Bedrooms: 1</span>
+                    <span>Bath: 1</span>
+                    <span>555 sq ft</span>
+     <div class="text-ic">535 кв м</div>
+
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/card_2.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_2.png" alt="Property 2">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Кисловодск, ул.Печкина19а</div>
-                </div>
+
+                <h3>Off-Hemur Road, Bangalore</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">2 Спальни</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">3 ванны</div>
-                    </div>
-                    <div class="text-ic">1000 кв м</div>
+                    <span>Bedrooms: 5</span>
+                    <span>Bath: 3</span>
+                    <span>1000 sq ft</span>
+
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/card_3.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_3.png" alt="Property 3">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Карельск, ул.Морожковая29</div>
-                </div>
+
+                <h3>Doddaballapur Road, Bangalore</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 спальня</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 ванная</div>
-                    </div>
-                    <div class="text-ic">535 кв м</div>
+                    <span>Bedrooms: 1</span>
+                    <span>Bath: 1</span>
+                    <span>555 sq ft</span>
+
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/card_4.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_4.png" alt="Property 4">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Квартальск, ул.Квозимодо,73</div>
-                </div>
+revert-1-main
+                <h3>Winterfield, Bangalore</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 спальня</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 ванная</div>
-                    </div>
-                    <div class="text-ic">535 кв м</div>
+                    <span>Bedrooms: 1</span>
+                    <span>Bath: 1</span>
+                    <span>555 sq ft</span>
+
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/card_5.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_5.png" alt="Property 5">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Калининск, ул.Панццыря и шпаги 923т</div>
-                </div>
+revert-1-main
+                <h3>Veterinina, Bangalore</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 спальня</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 ванная</div>
-                    </div>
-                    <div class="text-ic">535 кв м</div>
+                    <span>Bedrooms: 1</span>
+                    <span>Bath: 1</span>
+                    <span>555 sq ft</span>
+
                 </div>
             </div>
         </div>
         <div class="card">
-            <img src="../assets/images/card_6.png" alt="Property 1" class="card-img">
+            <img src="../assets/images/card_6.png" alt="Property 6">
             <div class="card-content">
-                <div class="icon-text">
-                    <img src="../assets/images/Location.png" alt="Иконка" class="icon_s">
-                    <div class="icon-text-text">Карасск, ул.Люля и Кебаба 12дж</div>
-                </div>
+
+                <h3>Uday Baug, Pune</h3>
                 <div class="details">
-                    <div class="bedrooms">
-                        <img src="../assets/images/fluent_bed-20-regular.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 спальня</div>
-                    </div>
-                    <div class="bath">
-                        <img src="../assets/images/cil_bath.png" alt="Иконка" class="icon_b">
-                        <div class="text-ic">1 ванная</div>
-                    </div>
-                    <div class="text-ic">535 кв м</div>
+                    <span>Bedrooms: 1</span>
+                    <span>Bath: 1</span>
+                    <span>555 sq ft</span>
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="more-section">
-        <button class="more-button">
-            <img src="../assets/images/Vector.png" alt="Иконка" class="vector-img">
-        </button>
-        <div class="view-text">Узнать больше</div>
-    </div>
+
+</div>
 <footer>
-    <div>
-        <div class="top_footer">
-            <div class="logo_text">
-                <div class="logo_bot">
-                    <img src="../assets/images/logo.png" alt="Логотип">
-                </div>
-                <div class="footer-text">
-                    Total Environment исследовали потребности более 4.5 миллиона пользователей по всему Алтаю в целях смешивания лучших тонизирующих коктейлей с кальцием железом и цинком
-                </div>
-            </div>
-            <div class="contacts">
-                <div class="tx">Свяжись с нами</div>
-                <hr class="custom-hr">
-                <div class="adress">
-                    <h3>Total Environmen</h3>
-                    <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Зона, <br>Карданово, Речица, 560066, Беларусь</p>
-                </div>
-                <div class="numbers">
-                    <h3>Sales:</h3>
-                    <p>Mobile: +375 17 492-14-24</p>
-                    <p>Email: discover@total-environment.com</p>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">© 2025 TotalEnvironment | Все права защищены</div>
-    </div>
-</footer> 
+    <p>Total Environment</p>
+    <p>IMADINE, No. 78, ITPL Main Road, EPIP Zone, Whitefield, Bangalore, 560066, India</p>
+    <p>Sales: Mobile: +91 99000 78000 | Email: discover@total-environment.com</p>
+    <p>© 2022 TotalEnvironment | All Rights Reserved</p>
+</footer>
+
 <script src="../scripts/script.js"></script>
 </body>
 </html>

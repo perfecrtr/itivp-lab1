@@ -8,20 +8,25 @@
 </head>
 <body class="bod">
     <header class="header">
-        <div class="back_1">
-            <img src="../assets/images/background_1.png" alt="background">
-          <nav class="navigation">
+    
+        <nav class="navigation">
+          
             <div class="logo">
-                <img src="../assets/images/logo.png" alt="Логотип"> <!-- Замените logo.png на путь к вашему логотипу -->
+                <img src="../assets/images/logo.png" alt="Логотип"> 
             </div>
+        
             <img alt="burger-menu" class="navigation_list__menu" src="../assets/images/server-img/menu.svg">
             <ul class="navigation_list">
-                <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Главная</button></li>
-                <li class="navigation_item">
+
+                
+                <li class="navigation_item"><button class="navigation_button "onclick='window.location.href="../index.html"'>Home</button></li>
+  <li class="navigation_item">
                     <button class="navigation_button" onclick='window.location.href="card.html"'>Объекты</button>
                 </li>
                 <li class="navigation_item">
-                    <button class="navigation_button" onclick='window.location.href="us.html"'>О компании</button>
+
+                    <button class="navigation_button " onclick='window.location.href="us.html"'>About us</button>
+
                 </li>
                 <li class="navigation_item">
                     <button class="navigation_button  navigation_button_active" onclick='window.location.href="Services.html"'>Услуги</button>
@@ -31,14 +36,26 @@
                 </li>
             </ul>
         </nav>
-          <div class="center-content">
+        <div class="back_1">
+            <img src="../assets/images/background_1.png" alt="background">
             <div class="overlay">
-                Найди свою <span class="spec_yel">Тихую Гавань</span> с нами
+
+                <span >
+                    Find Your <div class="spec_yel">Dream Home</div>   with us 
+                </span>
+
             </div>
-          </div>
-          <div class="shadow"></div>
+            <div class="shadow"></div>
         </div>
-      </header>
+        <div class="form-container">
+            <h2>Get In Touch</h2>
+            <input type="text" placeholder="Full Name">
+            <input type="text" placeholder="Phone number">
+            <input type="email" placeholder="Email">
+            <button type="submit">Submit</button>
+        </div>
+      
+    </header>
     <main>
         <section class="map-section">
             <h2>Наше рассположение</h2>
@@ -71,33 +88,13 @@
         </section>
     </main>
     <footer>
-        <div>
-            <div class="top_footer">
-                <div class="logo_text">
-                    <div class="logo_bot">
-                        <img src="../assets/images/logo.png" alt="Логотип">
-                    </div>
-                    <div class="footer-text">
-                        Total Environment исследовали потребности более 4.5 миллиона пользователей по всему Алтаю в целях смешивания лучших тонизирующих коктейлей с кальцием железом и цинком
-                    </div>
-                </div>
-                <div class="contacts">
-                    <div class="tx">Свяжись с нами</div>
-                    <hr class="custom-hr">
-                    <div class="adress">
-                        <h3>Total Environmen</h3>
-                        <p>IMADINE, No. 78, ITPL Main Road, EPIP <br>Зона, <br>Карданово, Речица, 560066, Беларусь</p>
-                    </div>
-                    <div class="numbers">
-                        <h3>Sales:</h3>
-                        <p>Mobile: +375 17 492-14-24</p>
-                        <p>Email: discover@total-environment.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">© 2025 TotalEnvironment | Все права защищены</div>
-        </div>
-    </footer> 
+
+        <p>Total Environment</p>
+        <p>IMADINE, No. 78, ITPL Main Road, EPIP Zone, Whitefield, Bangalore, 560066, India</p>
+        <p>Sales: Mobile: +91 99000 78000 | Email: discover@total-environment.com</p>
+        <p>© 2022 TotalEnvironment | All Rights Reserved</p>
+    </footer>
+
 
     <script>
         // Инициализация Stripe
