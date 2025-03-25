@@ -1,18 +1,27 @@
-.map-section {
+.offices-map-section {
+    max-width: 1200px;
+    margin: 40px auto;
     padding: 20px;
+}
+
+.offices-map-section h2{
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+  
+#agency-offices-map {
+    height: 500px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+  
+@media (max-width: 768px) {
+    #agency-offices-map {
+      height: 400px;
+    }
 }
 
-.map-container {
-    margin: 0 auto;
-    max-width: 800px;
-}
-
-.map-container iframe {
-    width: 100%;
-    height: 450px;
-    border: none;
-}
 .payment-section {
     padding: 20px;
     text-align: center;
